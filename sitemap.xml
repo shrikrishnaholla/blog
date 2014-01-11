@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://shrikrishnaholla.github.io/blog/blog/2014/01/11/hello-world/</loc>
+        <loc>http://blog.shrikrishnaholla.in/post/2014/01/11/hello-world/</loc>
         <lastmod>2014-01-11T19:18:08+00:00</lastmod>
     </url>
     <url>
-        <loc>http://shrikrishnaholla.github.io/blog/</loc>
+        <loc>http://blog.shrikrishnaholla.in/</loc>
         <lastmod>2014-01-11T19:18:08+00:00</lastmod>
     </url>
     <url>
-        <loc>http://shrikrishnaholla.github.io/blog/blog/archives/</loc>
+        <loc>http://blog.shrikrishnaholla.in/blog/archives/</loc>
         <lastmod>2014-01-11T19:18:08+00:00</lastmod>
     </url>
     <url>
-        <loc>http://shrikrishnaholla.github.io/blog/robots.txt</loc>
+        <loc>http://blog.shrikrishnaholla.in/robots.txt</loc>
         <lastmod>2014-01-06T21:35:02+00:00</lastmod>
     </url>
 </urlset>

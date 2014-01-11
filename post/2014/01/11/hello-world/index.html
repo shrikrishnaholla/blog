@@ -12,7 +12,7 @@
 		<title>Hello World &mdash; Shrikrishna Holla</title>
 		
 		<!-- Styles -->
-		<link href="/blog/stylesheets/main.css" rel="stylesheet">
+		<link href="/stylesheets/main.css" rel="stylesheet">
 		
 		<!-- Google webfonts -->
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
@@ -20,11 +20,11 @@
 		
 		<!-- jQuery and plugins -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script src="/blog/js/jquery.zclip.min.js"></script>
+		<script src="/js/jquery.zclip.min.js"></script>
 		
 		<!-- Syntax highlighter -->
-		<link href="/blog/stylesheets/prettify-hemisu.css" type="text/css" rel="stylesheet" />
-		<script type="text/javascript" src="/blog/js/prettify.js"></script>
+		<link href="/stylesheets/prettify-hemisu.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="/js/prettify.js"></script>
 		
 		<!--<link href="http://feeds.feedburner.com/turkeltaub" rel="alternate" title="Shrikrishna Holla" type="application/rss+xml" />-->
 		
@@ -38,8 +38,8 @@
 				
 				<div class="navi">
 					<ul>
-						<li><a href="/blog/">Blog</a></li>
-						<li><a href="/blog/blog/archives">Archives</a></li>
+						<li><a href="/">Blog</a></li>
+						<li><a href="/blog/archives">Archives</a></li>
 					</ul>
 				</div> <!-- // .navi -->
 			</header>
@@ -49,7 +49,7 @@
 <!-- START OF _includes/article.html -->
 <article>
 	<header>
-		<h1><a href="/blog/blog/2014/01/11/hello-world/">Hello World</a></h1>
+		<h1><a href="/post/2014/01/11/hello-world/">Hello World</a></h1>
 		<time>11 January 2014</time>
 	</header>
 		<div class="content">
@@ -107,7 +107,7 @@
 				return '<div class="clip-btn">copy to clipboard</div>';
 			});
 			$('.clip-btn').zclip({
-				path:'/blog/js/ZeroClipboard.swf',
+				path:'/js/ZeroClipboard.swf',
 				copy: $(this).next('code').text(),
 				afterCopy: function(){
 					$(this).replaceWith('<div class="clip-btn">copied!');

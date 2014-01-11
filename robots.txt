@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://shrikrishnaholla.github.io/blog/sitemap.xml 
+Sitemap: http://blog.shrikrishnaholla.in/sitemap.xml 
