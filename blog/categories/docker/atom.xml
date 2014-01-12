@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Docker | Shrikrishna Holla]]></title>
+  <link href="http://blog.shrikrishnaholla.in/blog/categories/docker/atom.xml" rel="self"/>
+  <link href="http://blog.shrikrishnaholla.in/"/>
+  <updated>2014-01-12T20:06:26+00:00</updated>
+  <id>http://blog.shrikrishnaholla.in/</id>
+  <author>
+    <name><![CDATA[Shrikrishna Holla]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Docker : The Good Parts]]></title>
+    <link href="http://blog.shrikrishnaholla.in/post/2014/01/12/docker-the-good-parts/"/>
+    <updated>2014-01-12T20:05:02+00:00</updated>
+    <id>http://blog.shrikrishnaholla.in/post/2014/01/12/docker-the-good-parts</id>
+    <content type="html"><![CDATA[<h1>Docker : The good parts</h1>
+
+<p>I have been playing with <a href="http://docker.io">Docker</a><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> for a while. Initially, I had been using it like a hypervisor &ndash; spin up containers, play around with them, and shut them down. But in the past few days, I have recognized two very useful utilities of docker, that make life easier.</p>
+
+<ul>
+<li><a href="#1">Docker as a deployment tool</a></li>
+<li><a href="#2">Docker as an application sandbox</a></li>
+</ul>
+
+
+<!-- more -->
+
+
+<h2>Docker as a deployment tool {#1}</h2>
+
+<h2>Docker as an application sandbox {#2}</h2>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>http://www.slideshare.net/dotCloud/why-docker2bisv4<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>
