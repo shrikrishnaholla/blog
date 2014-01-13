@@ -55,36 +55,45 @@
 		<time>12 January 2014</time>
 	</header>
 		<div class="content">
-			<h1>Docker : The good parts</h1>
+			<h1 id="docker--the-good-parts">Docker : The good parts</h1>
+<p>I have been playing with <a href="http://docker.io">Docker</a><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> for a while. Initially, I had been using it like a hypervisor - spin up containers, play around with them, and shut them down. But in the past few days, I have recognized two very useful utilities of docker, that make life easier.</p>
 
-<p>I have been playing with <a href="http://docker.io">Docker</a>[^1] for a while. Initially, I had been using it like a hypervisor &ndash; spin up containers, play around with them, and shut them down. But in the past few days, I have recognized two very useful utilities of docker, that make life easier.</p>
+<div id="#docker-as-deployment"></div>
 
-<p><div id="#docker-as-deployment"/></p>
-
-<h2>Docker as a deployment tool</h2>
-
+<h2 id="docker-as-a-deployment-tool">Docker as a deployment tool</h2>
 <p>This past week, I have been trying to deploy some of the projects I have worked on over the last two years. Each of these projects was different from the others: One was in <a href="nodejs.org">Node.js</a>, another was in <a href="https://www.djangoproject.com/">Django</a>, yet another in plain Python. I wanted them all to be running forever, didn&rsquo;t want one to affect the others, and wanted them to be resistant to failure on account of changes to the environment in the server box. A perfect use case for docker.</p>
 
 <p>Using docker to create a deployment environment involves writing a Dockerfile. Dockerfiles use a simple DSL which allows you to automate the steps you would normally manually take to create an image. Think of it as a <code>make</code> utility for deployment. The advantage of using docker is that it is portable; ie, the same container that you build and test on your laptop can run at scale, anywhere; in production, on VMs, bare metal, OpenStack clusters, public clouds etc.</p>
 
 <p>You will find documentation and examples for Dockerfile <a href="http://docs.docker.io/en/latest/use/builder/">here</a></p>
 
-<p><div id="#docker-as-application-sandbox"/></p>
+<div id="#docker-as-application-sandbox"></div>
 
-<h2>Docker as an application sandbox</h2>
+<h2 id="docker-as-an-application-sandbox">Docker as an application sandbox</h2>
+<p>This is something that isn&rsquo;t obvious on first thought. I remember that when I first heard about CoreOS, I had no idea how it would work. <a href="http://coreos.com">CoreOS</a> is a minimal distro that contains just a linux kernel and systemd and the root partition is completely read-only. It uses docker as a package manager to run applications on top of it. That means, every user application will run in its own linux container.<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> </p>
 
-<p>This is something that isn&rsquo;t obvious on first thought. I remember that when I first heard about CoreOS, I had no idea how it would work. <a href="http://coreos.com">CoreOS</a> is a minimal distro that contains just a linux kernel and systemd and the root partition is completely read-only. It uses docker as a package manager to run applications on top of it. That means, every user application will run in its own linux container.[^2]</p>
+<p>I have seen a lot of projects in Github that I found really interesting, but kept away from trying out because of the complexity of their setup. First you have to do this, then that &hellip; If there were a simple Dockerfile, that built the complete setup, then a single command would suffice. A great example for this is <a href="http://stackedit.io">StackEdit</a>, the markdown editor used to write this document. I wanted to have a local copy as I wanted to use it even I was offline. I found their Dockerfile in Github <sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> , so all I needed to do was build a container, and run it as a daemon. I don&rsquo;t need to worry about the version of node, nor of the dependencies nor anything else. If it&rsquo;s worked for them, it&rsquo;ll work for me. As simple as that!</p>
 
-<p>I have seen a lot of projects in Github that I found really interesting, but kept away from trying out because of the complexity of their setup. First you have to do this, then that &hellip; If there were a simple Dockerfile, that built the complete setup, then a single command would suffice. A great example for this is <a href="http://stackedit.io">StackEdit</a>, the markdown editor used to write this document. I wanted to have a local copy as I wanted to use it even I was offline. I found their Dockerfile in Github [^3] , so all I needed to do was build a container, and run it as a daemon. I don&rsquo;t need to worry about the version of node, nor of the dependencies nor anything else. If it&rsquo;s worked for them, it&rsquo;ll work for me. As simple as that!</p>
-
-<p>Another container I&rsquo;m running is that of octopress. All my attempts to setup octopress in my local system were failing for some unknown reason, so I wrote a simple Dockerfile[^4] to set it up. I now have a completely sandboxed octopress setup, that I can use for any number of octopress blogs without needing to install everything again. The instructions to do the same will be provided in the next blog entry.</p>
+<p>Another container I&rsquo;m running is that of octopress. All my attempts to setup octopress in my local system were failing for some unknown reason, so I wrote a simple Dockerfile<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> to set it up. I now have a completely sandboxed octopress setup, that I can use for any number of octopress blogs without needing to install everything again. The instructions to do the same will be provided in the next blog entry.  </p>
 
 <p>Have you found additional usecases for docker? Is there anything wrong about all that I&rsquo;ve said above? If so, let&rsquo;s discuss it in <a href="http://news.ycombinator.com">Hacker news</a></p>
 
-<p>[^1]:<a href="http://www.slideshare.net/dotCloud/why-docker2bisv">http://www.slideshare.net/dotCloud/why-docker2bisv</a>
-[^2]:<a href="https://coreos.com/using-coreos/">https://coreos.com/using-coreos/</a>
-[^3]:<a href="https://github.com/benweet/stackedit">https://github.com/benweet/stackedit</a>
-[^4]:<a href="https://gist.github.com/shrikrishnaholla/8393968">https://gist.github.com/shrikrishnaholla/8393968</a></p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>http://www.slideshare.net/dotCloud/why-docker2bisv<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>https://coreos.com/using-coreos/<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>https://github.com/benweet/stackedit<a href="#fnref:3" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>https://gist.github.com/shrikrishnaholla/8393968<a href="#fnref:4" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 		</div>
 	<footer>
@@ -119,8 +128,7 @@
 		<time>11 January 2014</time>
 	</header>
 		<div class="content">
-			<h1>Hello World</h1>
-
+			<h1 id="hello-world">Hello World</h1>
 <p>Just another blog by yet another developer</p>
 
 		</div>
