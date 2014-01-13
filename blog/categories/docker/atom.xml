@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Docker | Changing the world, one byte at a time]]></title>
+  <title><![CDATA[Category: Docker | Shrikrishna Holla]]></title>
   <link href="http://blog.shrikrishnaholla.in/blog/categories/docker/atom.xml" rel="self"/>
   <link href="http://blog.shrikrishnaholla.in/"/>
-  <updated>2014-01-13T14:04:26+00:00</updated>
+  <updated>2014-01-13T14:35:44+00:00</updated>
   <id>http://blog.shrikrishnaholla.in/</id>
   <author>
     <name><![CDATA[Shrikrishna Holla]]></name>
@@ -18,8 +18,7 @@
     <link href="http://blog.shrikrishnaholla.in/post/2014/01/12/docker-the-good-parts/"/>
     <updated>2014-01-12T20:05:02+00:00</updated>
     <id>http://blog.shrikrishnaholla.in/post/2014/01/12/docker-the-good-parts</id>
-    <content type="html"><![CDATA[<h1 id="docker--the-good-parts">Docker : The good parts</h1>
-<p>I have been playing with <a href="http://docker.io">Docker</a><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> for a while. Initially, I had been using it like a hypervisor - spin up containers, play around with them, and shut them down. But in the past few days, I have recognized two very useful utilities of docker, that make life easier.</p>
+    <content type="html"><![CDATA[<p>I have been playing with <a href="http://docker.io">Docker</a><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> for a while. Initially, I had been using it like a hypervisor - spin up containers, play around with them, and shut them down. But in the past few days, I have recognized two very useful utilities of docker, that make life easier.</p>
 
 <!-- more -->
 
