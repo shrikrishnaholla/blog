@@ -4,7 +4,7 @@
 	<title><![CDATA[Shrikrishna Holla]]></title>
 	<link href="http://blog.shrikrishnaholla.in/atom.xml" rel="self"/>
 	<link href="http://blog.shrikrishnaholla.in/"/>
-	<updated>2014-01-13T02:53:00+00:00</updated>
+	<updated>2014-01-13T02:59:17+00:00</updated>
 	<id>http://blog.shrikrishnaholla.in/</id>
 	<author>
 		<name><![CDATA[Shrikrishna Holla]]></name>
@@ -30,11 +30,6 @@
 
 <p>I have been playing with <a href="http://docker.io">Docker</a><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> for a while. Initially, I had been using it like a hypervisor &ndash; spin up containers, play around with them, and shut them down. But in the past few days, I have recognized two very useful utilities of docker, that make life easier.</p>
 
-<!-- more -->
-
-
-
-
 <p><div id="#docker-as-deployment"/></p>
 
 <h2>Docker as a deployment tool</h2>
@@ -50,9 +45,9 @@
 <h2>Docker as an application sandbox</h2>
 
 <p>This is something that isn&rsquo;t obvious on first thought. I remember that when I first heard about CoreOS, I had no idea how it would work. <a href="http://coreos.com">CoreOS</a> is a minimal distro that contains just a linux kernel and systemd and the root partition is completely read-only. It uses docker as a package manager to run applications on top of it. That means, every user application will run in its own linux container.[^coreos]
-[^coreos]: <a href="https://coreos.com/using-coreos/">https://coreos.com/using-coreos/</a></p>
+[^coreos]:<a href="https://coreos.com/using-coreos/">https://coreos.com/using-coreos/</a></p>
 
-<p>I have seen a lot of projects in Github that I found really interesting, but kept away from trying out because of the complexity of their setup. First you have to do this, then that &hellip; If there were a simple Dockerfile, that built the complete setup, then a single command would suffice. A great example for this is <a href="http://stackedit.io">StackEdit</a>, the markdown editor used to write this document. I wanted to have a local copy as I wanted to use it even I was offline. I found their Dockerfile in Github [^stackedit], so all I needed to do was build a container, and run it as a daemon. I don&rsquo;t need to worry about the version of node, nor of the dependencies nor anything else. If it&rsquo;s worked for them, it&rsquo;ll work for me. As simple as that!</p>
+<p>I have seen a lot of projects in Github that I found really interesting, but kept away from trying out because of the complexity of their setup. First you have to do this, then that &hellip; If there were a simple Dockerfile, that built the complete setup, then a single command would suffice. A great example for this is <a href="http://stackedit.io">StackEdit</a>, the markdown editor used to write this document. I wanted to have a local copy as I wanted to use it even I was offline. I found their Dockerfile in Github [^stackedit] , so all I needed to do was build a container, and run it as a daemon. I don&rsquo;t need to worry about the version of node, nor of the dependencies nor anything else. If it&rsquo;s worked for them, it&rsquo;ll work for me. As simple as that!</p>
 
 <p>[^stackedit]: <a href="https://github.com/benweet/stackedit">https://github.com/benweet/stackedit</a></p>
 
