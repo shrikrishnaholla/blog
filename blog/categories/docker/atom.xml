@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Docker | Changing the world, one byte at a time]]></title>
   <link href="http://blog.shrikrishnaholla.in/blog/categories/docker/atom.xml" rel="self"/>
   <link href="http://blog.shrikrishnaholla.in/"/>
-  <updated>2014-01-13T14:02:36+00:00</updated>
+  <updated>2014-01-13T14:04:26+00:00</updated>
   <id>http://blog.shrikrishnaholla.in/</id>
   <author>
     <name><![CDATA[Shrikrishna Holla]]></name>
@@ -20,6 +20,8 @@
     <id>http://blog.shrikrishnaholla.in/post/2014/01/12/docker-the-good-parts</id>
     <content type="html"><![CDATA[<h1 id="docker--the-good-parts">Docker : The good parts</h1>
 <p>I have been playing with <a href="http://docker.io">Docker</a><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> for a while. Initially, I had been using it like a hypervisor - spin up containers, play around with them, and shut them down. But in the past few days, I have recognized two very useful utilities of docker, that make life easier.</p>
+
+<!-- more -->
 
 <h2 id="docker-as-a-deployment-tool">Docker as a deployment tool</h2>
 <p>This past week, I have been trying to deploy some of the projects I have worked on over the last two years. Each of these projects was different from the others: One was in <a href="nodejs.org">Node.js</a>, another was in <a href="https://www.djangoproject.com/">Django</a>, yet another in plain Python. I wanted them all to be running forever, didn&rsquo;t want one to affect the others, and wanted them to be resistant to failure on account of changes to the environment in the server box. A perfect use case for docker.</p>
