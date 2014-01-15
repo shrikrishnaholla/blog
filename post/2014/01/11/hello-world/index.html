@@ -63,9 +63,10 @@ $(document).ready(
 	<header id="header" class="inner"><h1><a href="/">Shrikrishna Holla</a></h1>
 <h4>Changing the world, one byte at a time</h4>
 <nav id="main-nav"><ul>
+        <li><a href="http://shrikrishnaholla.in">Home</a></li>
 	<li><a href="/">Blog</a></li>
 	<li><a href="/about">About</a></li>
-	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="http://info.shrikrishnaholla.in">Portfolio</a></li>
 	<li><a href="/archives">Archive</a></li>
 </ul>
 </nav>
@@ -73,9 +74,10 @@ $(document).ready(
 	<div class="alignleft menu">
 		<a class="button">Menu</a>
 		<div class="container"><ul>
+        <li><a href="http://shrikrishnaholla.in">Home</a></li>
 	<li><a href="/">Blog</a></li>
 	<li><a href="/about">About</a></li>
-	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="http://info.shrikrishnaholla.in">Portfolio</a></li>
 	<li><a href="/archives">Archive</a></li>
 </ul>
 </div>
@@ -133,8 +135,32 @@ $(document).ready(
 	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
 	
 <!---	<a class="addthis_counter addthis_pill_style"></a> --->
+        
         <!-- Flattr button -->
         <script id='fb5cc7v'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=srikrishnaholla&button=compact&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fb5cc7v');</script>
+        
+        <!-- HN Like -->
+        <script type="text/javascript">
+    (function(){
+      var hn_like = document.createElement('iframe');
+      hn_like.frameborder="no";
+      hn_like.scrolling="no";
+      hn_like.height="28px";
+      hn_like.width="115px";
+      hn_like.src = "http://hnlike.com/upvote.php?link="
+                    + encodeURIComponent(document.location)
+                    + "&title="
+                    + encodeURIComponent("Hello World");
+      hn_like.innerHTML="iframes not supported by your browser";
+      var twitter = document.getElementsByClassName("twitter-share-button")[0];
+
+      twitter.parentNode.insertBefore(
+        hn_like,
+        twitter
+      );
+    })();
+  </script>
+<!-- End of sharing -->
 	</div>
   <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
 </div>
